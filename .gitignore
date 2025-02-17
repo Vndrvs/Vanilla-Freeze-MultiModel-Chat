@@ -1,0 +1,26 @@
+# env file
+.env-priv
+
+#sqlite dbase
+db.sqlite.db
+
+#python venv
+venv/
+vanilla-freeze/
+
+# python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE/editor
+.vscode/
+.idea/
+
+# macOS specific files
+.DS_Store
+
+# other
+*.log
+*.sqlite3

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/styling.css">
+    <script src="/static/scripts.js"></script>
+</head>
+<body>
+<div class="popup" id="popup">
+    <div class="overlay"></div>
+    <div class="popup-content">
+        <h2 id="popup-title">Enter Conversation Title</h2>
+        <p>To save your conversation for later use, please give it a thoughtful name.</p>
+        <div class="controls" id="control-input">
+            <textarea id="chat-name" placeholder="Name your chat..."></textarea>
+            <button class="submit-button">Submit</button>
+        </div>
+        <div class="message-area">
+        </div>
+    </div>
+    </div>
+    <nav id="sidebar">
+        <ul>
+            <li id="logo-space">
+                <img src="/static/images/vanilla_logo.svg">
+                <span class="logo">Vanilla Freeze</span>
+                <button id="toggle-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="2 2 20 20" fill="none" stroke="#000000" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17l-5-5 5-5M18 17l-5-5 5-5"/></svg>
+                </button>
+            </li>
+            <li>
+                <div class="persistent-text">
+                    <a class="sidebar-text" href="#" id="new-chat-button">
+                        <span>New Chat</span>
+                        <img src="/static/images/message-square-list-svgrepo-com.svg">
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="persistent-text">
+                    <a class="sidebar-text" href="/">
+                        <span>Dashboard</span>
+                        <img src="/static/images/dashboard-svgrepo-com.svg">
+                    </a>
+                </div>
+            </li>
+            <div id="chat-list"></div>
+        </ul>
+    </nav>
+    <main>
+        <div class="main-area">
+        <div id="chatbox-wrapper" class="grid-item">
+            <div id="chatbox"></div>
+        </div>
+        <div class="grid-item" id="input-wrapper">
+            <div id="user-input">
+                <textarea id="messageInput" placeholder="Message Vanilla Freeze..." oninput="autoResize()" onkeydown="handleKeyPressMessage(event)"></textarea>
+                <button id="send-button" onclick="sendMessage()"></button>
+            </div> 
+        </div>
+    </div>
+    </main>
+</body>
+</html>
