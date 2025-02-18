@@ -40,10 +40,10 @@ Therefore, I decided to build my own interface through which I can speak to Deep
 
 ## Important Notes
 
-The current, "V1" version of Vanilla Freeze is rather raw. I am just getting familiar with Langchain.
-Its text output is not formatted, there are a few known chat-deletion issues. (most can be solved by refreshing the page)
-
-Also, please add .env in your .gitignore file if you publish the repo, to keep your API Keys safe.
+   - The current, "V1" version of Vanilla Freeze is rather raw. I am just getting familiar with Langchain.
+   - You can only have 20 chats saved, if you reach that amount, you have to delete older conversations before creating new ones.
+   - Its text output is not formatted, there are a few known chat-deletion issues. (most can be solved by refreshing the page)
+   - Also, please add .env in your .gitignore file if you publish the repo, to keep your API Keys safe.
 
 I plan to release updates once in a while, altough my current semester in uni is absolutely brutal.
 
