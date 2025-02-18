@@ -55,30 +55,32 @@ Starting up the application is pretty straightforward.
 
 Python and Pip are needed on your computer.
 
-### Installation
-
 _To use this app, you will need at least one functioning API key from one of the providers._
+
 _OpenAI, Deepseek and Claude are pre-loaded in the app._
 
+_If you do not modify the code, ChatGPT 3.5 turbo will be the default model used._
 
-1. Get an API key from either
+Get an API key from either
    - OpenAI (https://openai.com/index/openai-api/)
    - DeepSeek (https://platform.deepseek.com/)
    - Anthropic (https://www.anthropic.com/api)
-   
-2. Fork/Clone the repo
+
+### Installation
+
+1. Fork/Clone the repo
    ```sh
    git clone https://github.com/Vndrvs/Vanilla-Freeze-MultiModel-Chat.git
    ```
-3. Navigate to the project directory
+2. Navigate to the project directory
    ```sh
    cd Vanilla-Freeze-MultiModel-Chat
    ```
-4. Create a virtual environment:
+3. Create a virtual environment:
    ```sh
    python -m venv venv
    ```
-5. Activate virtual environment:
+4. Activate virtual environment:
 
   Mac/Linux:
    ```sh
@@ -88,16 +90,16 @@ _OpenAI, Deepseek and Claude are pre-loaded in the app._
    ```sh
    venv\Scripts\activate
    ```
-6. Install dependencies:
+5. Install dependencies:
    ```sh
    pip install -r requirements.txt
    ```
-7. Change git remote url to avoid accidental pushes to the base project
+6. Change git remote url to avoid accidental pushes to the base project
    ```sh
    git remote set-url origin your_username/your_reponame
    git remote -v # confirm the changes
    ```
-8. Create .env file in the root directory, with the following content:
+7. Create .env file in the root directory, with the following content:
     ```sh
    # OpenAI API Key
    OPENAI_API_KEY=your_openai_api_key_goes_here
@@ -108,7 +110,7 @@ _OpenAI, Deepseek and Claude are pre-loaded in the app._
    # Anthropic API Key
    ANTHROPIC_API_KEY=your_anthropic_api_key_goes_here
    ```
-9. Run the app
+8. Run the app
    ```sh
    flask run
    ```
