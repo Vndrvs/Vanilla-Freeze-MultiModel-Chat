@@ -158,11 +158,11 @@ Distributed under the Unlicense License. See `LICENSE` for more information.
 
 Andras - vndrvs.dev@gmail.com
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## Acknowledgments
 
 Huge thumbs up to Othneil Drew (https://github.com/othneildrew) for this awesome project readme template. Cheers Mate!
 * [Awesome Project README Template](https://github.com/othneildrew/Best-README-Template)
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
